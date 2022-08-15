@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "8d884f67-cc6c-42fb-9ab3-0e467f152012",
+		"name": "Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10960723"
+	},
+	"item": [
+		{
+			"name": "store",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjA1OTEyNTQsImV4cCI6MTY2MDg3OTI1NCwibmJmIjoxNjYwNTkxMjU0LCJqdGkiOiI4WTR1YVZWd3JmSkRYdExXIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gI4801zZcKLeuNXZYclmVmovETckqabxG0qzkwJlWuk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name\n",
+							"value": "Frankkley da Silva Santos",
+							"type": "text"
+						},
+						{
+							"key": "cpf\n",
+							"value": "090.198.726.30",
+							"type": "text"
+						},
+						{
+							"key": "birth_date\n",
+							"value": "16/07/1989",
+							"type": "text"
+						},
+						{
+							"key": "phone\n\n",
+							"value": "33988614185",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/client/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"client",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjA1OTEyNTQsImV4cCI6MTY2MDg3OTI1NCwibmJmIjoxNjYwNTkxMjU0LCJqdGkiOiI4WTR1YVZWd3JmSkRYdExXIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gI4801zZcKLeuNXZYclmVmovETckqabxG0qzkwJlWuk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "full_name",
+							"value": "Frankley Santos",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "090.198.726.31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "birth_date",
+							"value": "24/07/1994",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "(33)98861-4185",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/client/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"client",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjA1OTEyNTQsImV4cCI6MTY2MDg3OTI1NCwibmJmIjoxNjYwNTkxMjU0LCJqdGkiOiI4WTR1YVZWd3JmSkRYdExXIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gI4801zZcKLeuNXZYclmVmovETckqabxG0qzkwJlWuk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/client/delete/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"client",
+						"delete",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjA1OTEyNTQsImV4cCI6MTY2MDg3OTI1NCwibmJmIjoxNjYwNTkxMjU0LCJqdGkiOiI4WTR1YVZWd3JmSkRYdExXIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gI4801zZcKLeuNXZYclmVmovETckqabxG0qzkwJlWuk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id\n",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "full_name",
+							"value": "frankley",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cpf",
+							"value": "129",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/client/show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"client",
+						"show"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
