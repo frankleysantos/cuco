@@ -9,6 +9,6 @@ Route::group([
     Route::post('/store', [ClientController::class, 'store']);
     Route::post('/update', [ClientController::class, 'update']);
     Route::get('/delete/{id}', [ClientController::class, 'delete']); 
-    Route::post('/show', [ClientController::class, 'show']); 
+    Route::post('/show', [ClientController::class, 'show'])->name('api.client.show'); 
     Route::post('/fakeStore/{id?}', [ClientController::class, 'apiFakeStore'])->name('clients.fake'); 
 });
